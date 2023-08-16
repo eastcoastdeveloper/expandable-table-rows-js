@@ -90,7 +90,7 @@ header span,
   width: calc(25% - (32px / 4));
 }
 header span:first-child {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 .partial {
   clear: both;
