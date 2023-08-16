@@ -82,12 +82,14 @@ header,
   height: 15px;
   float: left;
   margin-right: 15px;
+  font-size: 14px;
+    padding: 1px 0 2px 5px;
 }
 header span,
 .row > span {
   font-size: 14px;
   float: left;
-  width: calc(25% - (32px / 4));
+  width: calc(25% - (40px / 4));
 }
 header span:first-child {
   padding-left: 30px;
