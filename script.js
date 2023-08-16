@@ -1,6 +1,5 @@
 var loaded = false;
 
-// Fetch running twice ??
 fetch('data.json')
   .then((response) => response.json())
   .then((json) => {
