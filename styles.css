@@ -58,6 +58,10 @@ h4 {
   overflow: hidden;
   box-shadow: 2px 1px 5px 2px rgba(0, 0, 0, 0.25);
 }
+
+.data-table h4 {
+  margin-bottom: 0;
+}
 header {
   padding: 5px 10px 5px 40px;
 }
@@ -107,4 +111,10 @@ header span:first-child {
 .show-details {
   max-height: 200px !important;
   padding: 10px 20px 0 37px !important;
+}
+
+@media screen and (max-width: 520px) {
+  .data-table {
+    margin: 10px;
+  }
 }
