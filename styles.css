@@ -7,44 +7,7 @@ body {
   margin: 0;
   background-color: lightgray;
 }
-header {
-  padding: 5px 20px 7px 15px !important;
-  font: normal 14px sans-serif;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  background-color: #313b3f;
-  color: #d9a74a;
-  overflow: auto;
-  position: relative;
-}
-.fat-arrow {
-  position: relative;
-  float: left;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-}
-.fat-arrow span {
-  font-size: 20px;
-  font-style: italic;
-  float: none;
-  width: auto;
-}
-.caret {
-  font-size: 30px;
-  line-height: 22px;
-  display: inline-block;
-  font-weight: lighter;
-}
-header a {
-  text-decoration: none;
-  position: absolute;
-  right: 20px;
-  font-size: 14px;
-  top: 50%;
-  transform: translateY(-50%);
-  float: right;
-  color: #d9a74a;
-}
+
 h4 {
   font-size: 16px;
   margin: 0 0 20px 0;
