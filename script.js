@@ -14,7 +14,7 @@ fetch('data.json')
           '</span><span>' +
           json[i].climate +
           '</span><div class="partial">' +
-          json[i].text;
+          json[i].text
         +'</div>';
       }
       populateContent();
