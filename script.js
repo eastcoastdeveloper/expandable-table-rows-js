@@ -14,8 +14,8 @@ fetch('data.json')
           '</span><span>' +
           json[i].climate +
           '</span><div class="partial">' +
-          json[i].text
-        +'</div>';
+          json[i].text +
+          '</div>';
       }
       populateContent();
     }
@@ -28,6 +28,9 @@ function populateContent() {
 
   details = Array.from(document.querySelectorAll('.see-more'));
   checkBoxes = Array.from(document.querySelectorAll('.checkbox'));
+
+  console.log(details);
+  console.log(document.querySelectorAll('.see-more'))
 
   for (let i = 0; i < details.length; i++) {
     details[i].addEventListener('click', (e) => {
@@ -43,7 +46,7 @@ function populateContent() {
     });
   }
   function toggleCheckmark(elem) {
-    console.log(elem)
+    console.log(elem);
     elem.classList.contains('show-details')
       ? (elem.parentElement.querySelector('.checkbox').innerHTML = '&check;')
       : (elem.parentElement.querySelector('.checkbox').innerHTML = '');
