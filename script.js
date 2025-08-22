@@ -26,11 +26,8 @@ function populateContent() {
   let details = [],
     checkBoxes = [];
 
-  details = Array.from(document.querySelectorAll('.see-more'));
+  details = Array.from(document.querySelectorAll('.see-more')); // Node List
   checkBoxes = Array.from(document.querySelectorAll('.checkbox'));
-
-  console.log(details);
-  console.log(document.querySelectorAll('.see-more'))
 
   for (let i = 0; i < details.length; i++) {
     details[i].addEventListener('click', (e) => {
@@ -45,6 +42,8 @@ function populateContent() {
       toggleCheckmark(item);
     });
   }
+
+
   function toggleCheckmark(elem) {
     console.log(elem);
     elem.classList.contains('show-details')
