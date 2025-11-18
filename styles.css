@@ -26,11 +26,16 @@ h4 {
   margin-bottom: 0;
 }
 header {
-  padding: 5px 10px 5px 40px;
+  margin: 10px 0 0 40px;
+  padding-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
 }
-header,
+
 .row {
-  overflow: auto;
+  display: grid;
+  grid-template-columns: 15px repeat(4, calc(100% / 4 - 19px));
+  grid-column-gap: 15px;
 }
 .content .row {
   padding: 10px;
@@ -45,25 +50,15 @@ header,
   border: 1px solid black;
   border-radius: 2px;
   cursor: pointer;
-  width: 15px;
   height: 15px;
-  float: left;
-  margin-right: 15px;
   font-size: 14px;
-    padding: 1px 0 2px 5px;
 }
 header span,
 .row > span {
   font-size: 14px;
-  float: left;
-  width: calc(25% - (40px / 4));
 }
-header span:first-child {
-  padding-left: 30px;
-}
+
 .partial {
-  clear: both;
-  transition: all 0.25s;
   overflow: hidden;
   font-size: 13px;
   line-height: 20px;
@@ -73,7 +68,8 @@ header span:first-child {
 }
 .show-details {
   max-height: 200px !important;
-  padding: 10px 20px 0 37px !important;
+  padding: 10px 0 0 37px !important;
+  grid-column: 1 / 6;
 }
 
 @media screen and (max-width: 520px) {
