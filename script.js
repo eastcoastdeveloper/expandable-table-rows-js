@@ -23,31 +23,25 @@ fetch('data.json')
   });
 
 function populateContent() {
-  let details = [],
-    checkBoxes = [];
+  let checkBoxes = [];
 
-  details = Array.from(document.querySelectorAll('.see-more')); // Node List
   checkBoxes = Array.from(document.querySelectorAll('.checkbox'));
-
-  for (let i = 0; i < details.length; i++) {
-    details[i].addEventListener('click', (e) => {
-      e.target.parentElement.classList.remove('show-details');
-    });
-  }
+  console.log(checkBoxes);
 
   for (let i = 0; i < checkBoxes.length; i++) {
     checkBoxes[i].addEventListener('click', (e) => {
+      console.log(e);
       let item = e.target.parentElement.querySelector('.partial');
       item.classList.toggle('show-details');
       toggleCheckmark(item);
     });
   }
+}
 
+function toggleCheckmark(elem) {
+  elem.classList.contains('show-details')
+    ? (elem.parentElement.querySelector('.checkbox').innerHTML = '&check;')
+    : (elem.parentElement.querySelector('.checkbox').innerHTML = '');
 
-  function toggleCheckmark(elem) {
-    console.log(elem);
-    elem.classList.contains('show-details')
-      ? (elem.parentElement.querySelector('.checkbox').innerHTML = '&check;')
-      : (elem.parentElement.querySelector('.checkbox').innerHTML = '');
-  }
+  condition ? true : false;
 }
